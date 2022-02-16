@@ -80,7 +80,6 @@ public class Day5 {
 		for(Vent v : vents) {
 			if(v.x1 == v.x2) {
 				if(v.y1 > v.y2) {
-					Boolean b = true;
 					for(int i = v.y2; i <= v.y1; i++) {
 						if(diagram[v.x1][i] == ".") diagram[v.x1][i] = "1";
 						else if (diagram[v.x1][i] == "1") {
@@ -93,7 +92,6 @@ public class Day5 {
 					}
 				}
 				else {
-					Boolean b = true;
 					for(int i = v.y1; i <= v.y2; i++) {
 						if(diagram[v.x1][i] == ".") diagram[v.x1][i] = "1";
 						else if (diagram[v.x1][i] == "1") {
@@ -108,7 +106,6 @@ public class Day5 {
 			}
 			else if(v.y1 == v.y2) {
 				if(v.x1 > v.x2) {
-					Boolean b = true;
 					for(int i = v.x2; i <= v.x1; i++) {
 						if(diagram[i][v.y1] == ".") diagram[i][v.y1] = "1";
 						else if (diagram[i][v.y1] == "1") {
@@ -121,7 +118,6 @@ public class Day5 {
 					}
 				}
 				else {
-					Boolean b = true;
 					for(int i = v.x1; i <= v.x2; i++) {
 						if(diagram[i][v.y1] == ".") diagram[i][v.y1] = "1";
 						else if (diagram[i][v.y1] == "1") {
